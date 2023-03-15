@@ -37,11 +37,11 @@ def gpu_info():
 
             power = nv.nvmlDeviceGetPowerUsage(handle)
             power_limit = nv.nvmlDeviceGetEnforcedPowerLimit(handle)
-            fan_speed = nv.nvmlDeviceGetFanSpeed(handle)
+            #fan_speed = nv.nvmlDeviceGetFanSpeed(handle)
 
             gpu_infos[i]["power_used"] = power/1000 #will make the power used in watts
             gpu_infos[i]["power_limit"] = power_limit/1000#will make the power in watts
-            gpu_infos[i]["fan_speed"] = fan_speed
+            #gpu_infos[i]["fan_speed"] = fan_speed
 
 
 
